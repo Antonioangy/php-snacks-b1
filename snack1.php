@@ -30,7 +30,7 @@
             ]
         ];
 
-        for{$i = 0; $i < count($partite); $i++}
+        for($i = 0; $i < count($partite); $i++)
     ?>
 </body>
 </html>
