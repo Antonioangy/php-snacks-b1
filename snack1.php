@@ -15,22 +15,30 @@
 
     <?php
         $partite = [
-            
             [
-                "Olimpia Milano" => "70"
-                "Cantù" => "73"
+                "casa" => "Olimpia Milano",
+                "ospiti" => "Cantù",
+                "puntiCasa" => 70,
+                "puntiOspiti" => 73
             ],
             [
-                "Virtus Bologna" => "96"
-                "Pistoese" => "82"
+                "casa" => "Roma",
+                "ospiti" => "Torino",
+                "puntiCasa" => 96,
+                "puntiOspiti" => 82
             ],
             [
-                "Reyer Venezia" => "78"
-                "Brescia Pallacanestro" => "79"
-            ]
+                "casa" => "Firenze",
+                "ospiti" => "Verona",
+                "puntiCasa" => 78,
+                "puntiOspiti" => 79
+            ],
         ];
 
-        for($i = 0; $i < count($partite); $i++)
+        for($i = 0; $i < count($partite); $i++){
+            echo $partite[$i]['casa'] . " - " . $partite[$i]['ospiti'] . " = " . $partite[$i]['puntiCasa'] . "-" . $partite[$i]['puntiOspiti'] . "<br>";
+        }
     ?>
+    
 </body>
 </html>
